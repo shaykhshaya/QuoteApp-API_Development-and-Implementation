@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/seekpng_com_gradient_background_png_3182628"
+    android:padding="10dp"
+    tools:context=".AddQuote">
+    
+    
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Add Quote"
+        app:titleTextColor="@color/white"
+        android:id="@+id/add_quote_toolbar"/>
+    
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/add_quote_data_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#FBB1B1"
+        android:hint="Add Quote Data"
+        android:gravity="start"
+        android:inputType="text"
+        android:minHeight="60dp"
+        android:paddingStart="12dp"
+        android:paddingRight="12dp"
+
+        />
+
+    <EditText
+        android:id="@+id/add_quote_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:background="#FAB0B0"
+        android:hint="Add Quote Name"
+        android:inputType="text"
+        android:minHeight="60dp"
+        android:paddingStart="12dp"
+        android:paddingRight="12dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_data_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15sp"
+        android:background="@drawable/button_background_design"
+        />
+</LinearLayout>

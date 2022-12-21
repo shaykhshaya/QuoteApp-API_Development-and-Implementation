@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#880B0B"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/textview_quote_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        tools:text="Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking." />
+
+    <TextView
+        android:id="@+id/textview_quote_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Steve Jobs" />
+
+    <TextView
+        android:id="@+id/textview_quote_dateandtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#9EA2A5"
+        android:layout_marginEnd="10dp"
+        android:gravity="center_vertical|right"
+        tools:text="05/08/2022" />
+
+
+    <LinearLayout
+        android:id="@+id/sub_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:layout_margin="8dp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:layout_margin="8dp"
+             />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
